@@ -4,7 +4,6 @@
 	slf4j.api,\
 	iotlab.common.virtual.object;version=latest,\
 	biz.aQute.bnd.annotation,\
-	de.twentyeleven.skysail.org.json-osgi,\
 	flexiblepower.api,\
 	flexiblepower.api.ext,\
 	iotlab.mqtt;version=latest
