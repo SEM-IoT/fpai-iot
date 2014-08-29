@@ -1,0 +1,21 @@
+-buildpath:  \
+	biz.aQute.bnd.annotation;version='[1.52,3)',\
+	osgi.core;version='[4.3,5)',\
+	slf4j.api;version='[1.7,2)'
+
+Bundle-Version: 1.0.0
+Include-Resource: res
+
+Private-Package: nl.tno.iotlab.serial.driver.impl
+Export-Package: \
+	gnu.io.*;version=2.2.pre2,\
+	nl.tno.iotlab.serial.driver;version=1.0.0.${qualifier}
+
+#technolution/librxtxSerial.so; osname=Linux; processor=arm,\
+
+Bundle-NativeCode: \
+	arm-linux/librxtxSerial-2.2pre1.so; osname=Linux; processor=arm,\
+	i686-pc-linux-gnu/librxtxSerial.so; osname=Linux; processor=i686 ; processor=i386 ; processor=x86,\
+	x86_64-unknown-linux-gnu/librxtxSerial.so; osname=Linux ; processor=amd64 ; processor=x86_64,\
+	win32/rxtxSerial.dll; osname=WindowsXP ; osname=Windows XP ; osname=WinXP ; osname=WindowsVista ; osname=Windows Vista ; osname=Windows2003 ; osname=Windows 7 ; osname=Win32; processor=x86 ,\
+	win64/rxtxSerial.dll; osname=WindowsXP ; osname=Windows XP ; osname=WinXP ; osname=WindowsVista ; osname=Windows Vista ; osname=Windows2003 ; osname=Windows 7 ; osname=Win32 ; processor=amd64 ; processor=x86_64,*

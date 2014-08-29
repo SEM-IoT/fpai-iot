@@ -9,7 +9,7 @@
 		</config>
 		
 		<config bundleId="iotlab.serial.driver2" factoryId="org.tno.serial.driver.SerialDriverImpl">
-			<getcomport>/dev/tty.SLAB_USBtoUART</getcomport>
+			<getcomport>COM9</getcomport>
 		</config>
 		
 	</scenario>
