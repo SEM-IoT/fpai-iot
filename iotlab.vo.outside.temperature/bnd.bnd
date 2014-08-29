@@ -1,0 +1,18 @@
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	junit.osgi,\
+	org.eclipse.osgi,\
+	osgi.cmpn,\
+	osgi.core,\
+	slf4j.api,\
+	iotlab.common.virtual.object;version=latest,\
+	org.eclipse.paho.client.mqttv3,\
+	de.twentyeleven.skysail.org.json-osgi,\
+	biz.aQute.bnd.annotation
+
+Bundle-Version: 1.0.0
+Private-Package: org.tno.iotlab.outside.temperatuur.vo
+Service-Component: org.tno.iotlab.outside.temperatuur.vo.*
+Export-Package: org.tno.iotlab.outside.temperatuur.vo
+Include-Resource: res/

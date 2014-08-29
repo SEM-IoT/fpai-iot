@@ -1,0 +1,14 @@
+-buildpath: \
+	junit.osgi,\
+	org.eclipse.osgi,\
+	osgi.cmpn,\
+	osgi.core,\
+	slf4j.api,\
+	biz.aQute.bnd.annotation,\
+	org.eclipse.paho.client.mqttv3
+	
+Service-Component: *
+
+Bundle-Version: 1.0.0
+Export-Package: org.tno.mqtt.connection
+Include-Resource: res/

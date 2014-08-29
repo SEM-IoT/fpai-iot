@@ -1,0 +1,21 @@
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	junit.osgi,\
+	org.eclipse.osgi,\
+	osgi.cmpn,\
+	osgi.core,\
+	slf4j.api,\
+	biz.aQute.bnd.annotation,\
+	iotlab.mqtt;version=latest
+
+
+Bundle-Version: 1.0.0
+Import-Package: \
+	org.flexiblepower*,\
+	*;resolution:=optional
+
+
+Service-Component: *
+Export-Package: org.tno.iotlab.common.vo,\
+	org.tno.iotlab.common.service

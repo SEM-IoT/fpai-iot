@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<repository increment='1389632072216' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.file'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='d70f9d564daeafc92af02bbb32206108ec333526658acc483cf51287ac38f534'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.file/nl.tno.fpai.monitoring.file-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='17120'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.file'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.file'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.observation)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.db.pooleddatasource'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0.SNAPSHOT-201401131653'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8012acc35942750e9a31e26dd57e2e44914c74f4ffc3748fe623452507091d61'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.db.pooleddatasource/nl.tno.fpai.monitoring.db.pooleddatasource-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='16235'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.db.pooleddatasource'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131653'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.db.pooleddatasource'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131653'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.dummy.provider'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='6ebc1f5e1985cfefb96e8ce7219ba4898abf55b6abce6b25290328b7465152ac'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.dummy.provider/nl.tno.fpai.monitoring.dummy.provider-0.0.0.jar'/>
+      <attribute name='size' type='Long' value='17645'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.dummy.provider'/>
+      <attribute name='bundle-version' type='Version' value='0.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.dummy.provider'/>
+      <attribute name='bundle-version' type='Version' value='0.0.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure.quantity)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure.unit)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.observation)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.observation.ext)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.rai.values)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.logging.tofilestatuslistener'/>
+      <attribute name='type' value='osgi.fragment'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1bd4edd0ab3b247855a9e76e8be5ae1ab9b94265aab0b579e48ffdd64a93277c'/>
+      <attribute name='url' value='nl.tno.fpai.logging.tofilestatuslistener/nl.tno.fpai.logging.tofilestatuslistener-0.0.0.jar'/>
+      <attribute name='size' type='Long' value='8501'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=ch.qos.logback.core.status)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.host'>
+      <directive name='filter' value='(&amp;(osgi.wiring.host=ch.qos.logback.classic)(bundle-version&gt;=0.0.0))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.logging.osgidatasource'/>
+      <attribute name='type' value='osgi.fragment'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='6953910ac588050e6728780904d6765cd03f5028b2a7e14c150c9928ade2e0d0'/>
+      <attribute name='url' value='nl.tno.fpai.logging.osgidatasource/nl.tno.fpai.logging.osgidatasource-0.0.0.jar'/>
+      <attribute name='size' type='Long' value='11535'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=ch.qos.logback.classic.db)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=ch.qos.logback.core.db)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=ch.qos.logback.core.db.dialect)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=ch.qos.logback.core.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.host'>
+      <directive name='filter' value='(&amp;(osgi.wiring.host=ch.qos.logback.classic)(bundle-version&gt;=0.0.0))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.db.writer'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='3e20c2b2cd5ee2a897b2fc4be989bed982786eb3cadee87d14bfed5de61a469f'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.db.writer/nl.tno.fpai.monitoring.db.writer-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='38129'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.db.writer'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.db.writer'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure.quantity)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.measure.unit)(version&gt;=4.3.0)(!(version&gt;=5.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.observation)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.ui.web.client'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='2d68f96ac803a433b93b0aa198515fad4beec5d2086268c5ca11f7613c8288b8'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.ui.web.client/nl.tno.fpai.monitoring.ui.web.client-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='16887'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.ui.web.client'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.ui.web.client'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='nl.tno.fpai.monitoring.ui.web.service'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='00895c6d19167680b5789cb896503b18db327d0dbdc7030f5c3f699a69db4c82'/>
+      <attribute name='url' value='nl.tno.fpai.monitoring.ui.web.service/nl.tno.fpai.monitoring.ui.web.service-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='14012'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='nl.tno.fpai.monitoring.ui.web.service'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='nl.tno.fpai.monitoring.ui.web.service'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0.SNAPSHOT-201401131654'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+</repository>

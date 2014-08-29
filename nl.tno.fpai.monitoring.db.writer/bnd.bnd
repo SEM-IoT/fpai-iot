@@ -1,0 +1,12 @@
+Bundle-Version: 0.1.0.${qualifier}
+Private-Package: nl.tno.fpai.monitoring.db.writer
+
+Service-Component: nl.tno.fpai.monitoring.db.writer.*
+
+-buildpath: flexiblepower.api,\
+	osgi.cmpn;version='[4.3,5.0)',\
+	flexiblepower.api.ext,\
+	slf4j.api,\
+	biz.aQute.bnd.annotation
+
+-includeresource: sql

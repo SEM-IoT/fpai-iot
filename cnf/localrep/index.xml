@@ -1,0 +1,1233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<repository increment='1392656679084' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='de.twentyeleven.skysail.org.json-osgi'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='20080701.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='7d299abb0f4f0330c746dc456a767f1b02b3675ed24a2d4b9d6e7e7b99e7e223'/>
+      <attribute name='url' value='de.twentyeleven.skysail.org.json-osgi/de.twentyeleven.skysail.org.json-osgi-20080701.0.0.jar'/>
+      <attribute name='size' type='Long' value='38491'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='de.twentyeleven.skysail.org.json-osgi'/>
+      <attribute name='bundle-version' type='Version' value='20080701.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='de.twentyeleven.skysail.org.json-osgi'/>
+      <attribute name='bundle-version' type='Version' value='20080701.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.json'/>
+      <attribute name='version' type='Version' value='20080701.0.0'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.json-osgi'/>
+      <attribute name='bundle-version' type='Version' value='20080701.0.0'/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='indesit.device.protocol.zigbee'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='443d4aff4952e04dccd06b720e441881cef47729cfc698b9fd7e08e8f6edd6eb'/>
+      <attribute name='url' value='indesit.device.protocol.zigbee/indesit.device.protocol.zigbee-0.3.4.jar'/>
+      <attribute name='size' type='Long' value='226455'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.attributes.time'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.enums'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.exceptions'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.frames'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.utils'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.frames.zcl'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.freescale_ztc'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='gnu.io,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancecontrol'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancecontrol.attributes'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancecontrol.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.applianceidentification'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.applianceidentification.attributes'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancestatistics'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.profiles.ha.clusters.appliancestatistics.commands,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancestatistics.attributes'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.appliancestatistics.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.message'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.message.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.onoff'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.partition'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.profiles.ha.clusters.partition.attributes'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.partition.attributes'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.partition.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.profiles.ha.clusters.partition.attributes'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.powerprofile'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.profiles.ha.clusters.powerprofile.commands,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.powerprofile.attributes'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.powerprofile.commands'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.ha.clusters.time'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.activeendpointsrequest'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.activeendpointsresponse'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.deviceannouncement'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.mgmtpermitjoiningrequest'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.mgmtpermitjoiningresponse'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.xbee.api.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.nwkaddrrequest'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.nwkaddrresponse'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.simpledescriptorrequest'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.profiles.zdp.clusters.simpledescriptorresponse'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.types'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.utils'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.xml.datatype,nl.technolution.zigbee.enums,nl.technolution.zigbee.exceptions,org.jfree.data.time'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.xbee'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.types,nl.technolution.zigbee.utils'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.xbee.api'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee.xbee.api.frames'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.exceptions,nl.technolution.zigbee.types,nl.technolution.zigbee.xbee,nl.technolution.zigbee.xbee.api'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.zigbee'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='nl.technolution.zigbee.commands,nl.technolution.zigbee.exceptions,nl.technolution.zigbee.frames,nl.technolution.zigbee.frames.zcl,nl.technolution.zigbee.profiles,nl.technolution.zigbee.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='nl.technolution.indesit.device.protocol.zigbee'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.zigbee'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='aQute.bnd.annotation.metatype,nl.technolution.zigbee,org.flexiblepower.time'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=aQute.bnd.annotation.metatype)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=gnu.io)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.datatype)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.lang.time)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.flexiblepower.time)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.jfree.data.time)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.joda.time)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='com.mysql.jdbc'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='bea68038a00bd4f9ed07677de738703ec58ea2229e22c237d9b2fe497f2b8bc1'/>
+      <attribute name='url' value='com.mysql.jdbc/com.mysql.jdbc-5.1.26.jar'/>
+      <attribute name='size' type='Long' value='855948'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc.log,javax.naming,javax.net.ssl,javax.xml.transform,org.xml.sax'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.jdbc2.optional'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc,com.mysql.jdbc.log,javax.naming,javax.sql,javax.transaction.xa'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.log'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.profiler'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.util'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc.log'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.exceptions'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.exceptions.jdbc4'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.interceptors'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+      <directive name='uses' value='com.mysql.jdbc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.integration.c3p0'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.integration.jboss'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.mysql.jdbc.configs'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.gjt.mm.mysql'/>
+      <attribute name='version' type='Version' value='5.1.26'/>
+      <attribute name='bundle-symbolic-name' value='com.mysql.jdbc'/>
+      <attribute name='bundle-version' type='Version' value='5.1.26'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.net.ssl)(version&gt;=1.0.1)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.stream)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.dom)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stream)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.w3c.dom)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming.spi)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.transaction.xa)(version&gt;=1.0.1)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.mchange.v2.c3p0)(version&gt;=0.9.1.2)(!(version&gt;=1.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.jboss.resource.adapter.jdbc)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.jboss.resource.adapter.jdbc.vendor)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.ops4j.pax.jdbc.mysql'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.3.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8c07e7b057bbad0148d3e1b0d783d32a81e1e9839df4e5828a6abad82f67f326'/>
+      <attribute name='url' value='org.ops4j.pax.jdbc.mysql/org.ops4j.pax.jdbc.mysql-0.3.0.jar'/>
+      <attribute name='size' type='Long' value='5447'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.ops4j.pax.jdbc.mysql'/>
+      <attribute name='bundle-version' type='Version' value='0.3.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.ops4j.pax.jdbc.mysql'/>
+      <attribute name='bundle-version' type='Version' value='0.3.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.mysql.jdbc)(version&gt;=5.1.0)(!(version&gt;=6.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.mysql.jdbc.jdbc2.optional)(version&gt;=5.1.0)(!(version&gt;=6.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='indesit.device.protocol.lib'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='9fcd9ce5b9faabf253ec82176430fc993277642901c320184a6dcbff0f00d0d9'/>
+      <attribute name='url' value='indesit.device.protocol.lib/indesit.device.protocol.lib-0.3.4.jar'/>
+      <attribute name='size' type='Long' value='2954710'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='gnu.io'/>
+      <attribute name='version' type='Version' value='2.2.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.convert,org.joda.time.base,org.joda.time.field,org.joda.time.format,org.joda.time.tz'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.base'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.convert,org.joda.time,org.joda.time.format'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.chrono'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.time'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.convert'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.time,org.joda.time.format'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.field'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.time'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.format'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.time'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.joda.time'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Africa'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.America'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.America.Argentina'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.America.Indiana'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.America.Kentucky'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.America.North_Dakota'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Antarctica'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Asia'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Atlantic'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Australia'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Etc'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Europe'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Indian'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.time.tz.data.Pacific'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.joda.convert'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.ui.about'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.base'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.base.config,org.jfree.base.modules,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.base.config'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.base.log'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.base.modules,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.base.modules'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.base,org.jfree.base.config,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.chart.annotations,org.jfree.chart.axis,org.jfree.chart.block,org.jfree.chart.entity,org.jfree.chart.event,org.jfree.chart.imagemap,org.jfree.chart.plot,org.jfree.chart.renderer,org.jfree.chart.renderer.category,org.jfree.chart.renderer.xy,org.jfree.chart.title,org.jfree.data.category,org.jfree.data.general,org.jfree.data.statistics,org.jfree.data.xy,org.jfree.ui,org.jfree.ui.about,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.annotations'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart.axis,org.jfree.chart.plot,org.jfree.chart.title,org.jfree.chart.util,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.axis'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart.event,org.jfree.chart.plot,org.jfree.data,org.jfree.data.category,org.jfree.data.time,org.jfree.text,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.block'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart.entity,org.jfree.data,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.demo'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.ui'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.editor'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.chart,org.jfree.chart.plot'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.encoders'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.entity'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart.imagemap,org.jfree.data.category,org.jfree.data.general,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.event'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart,org.jfree.chart.axis,org.jfree.chart.plot,org.jfree.chart.title'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.imagemap'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.labels'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.category,org.jfree.data.contour,org.jfree.data.general,org.jfree.data.xy,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.needle'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.plot'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.chart,org.jfree.chart.annotations,org.jfree.chart.axis,org.jfree.chart.event,org.jfree.chart.labels,org.jfree.chart.needle,org.jfree.chart.renderer,org.jfree.chart.renderer.category,org.jfree.chart.renderer.xy,org.jfree.chart.title,org.jfree.chart.urls,org.jfree.data,org.jfree.data.category,org.jfree.data.contour,org.jfree.data.general,org.jfree.data.xy,org.jfree.text,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.plot.dial'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart.event,org.jfree.chart.plot,org.jfree.data.general,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.renderer'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart,org.jfree.chart.axis,org.jfree.chart.entity,org.jfree.chart.event,org.jfree.chart.labels,org.jfree.chart.plot,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.renderer.category'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.chart,org.jfree.chart.axis,org.jfree.chart.entity,org.jfree.chart.event,org.jfree.chart.labels,org.jfree.chart.plot,org.jfree.chart.renderer,org.jfree.chart.urls,org.jfree.data,org.jfree.data.category,org.jfree.data.gantt,org.jfree.data.statistics,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.renderer.xy'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart,org.jfree.chart.annotations,org.jfree.chart.axis,org.jfree.chart.entity,org.jfree.chart.event,org.jfree.chart.labels,org.jfree.chart.plot,org.jfree.chart.renderer,org.jfree.chart.urls,org.jfree.data,org.jfree.data.general,org.jfree.data.xy,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.resources'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.servlet'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.servlet,javax.servlet.http,org.jfree.chart'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.title'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.chart,org.jfree.chart.axis,org.jfree.chart.block,org.jfree.chart.event,org.jfree.chart.renderer,org.jfree.data,org.jfree.data.general,org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.urls'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.category,org.jfree.data.general,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.chart.util'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.general,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.category'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.general,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.contour'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.xy'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.function'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.gantt'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.category,org.jfree.data.general,org.jfree.data.time,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.general'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.category,org.jfree.data.function,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.io'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.category'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.jdbc'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.category,org.jfree.data.general,org.jfree.data.xy'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.resources'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.statistics'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.category,org.jfree.data.general,org.jfree.data.xy,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.time'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing.table,org.jfree.data,org.jfree.data.general,org.jfree.data.xy,org.jfree.date,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.time.ohlc'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data,org.jfree.data.time,org.jfree.data.xy'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.xml'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.data.category,org.jfree.data.general,org.xml.sax,org.xml.sax.helpers'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.data.xy'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing.table,org.jfree.data,org.jfree.data.general,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.date'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.io'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.layout'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.resources'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.text'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.jfree.ui,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.threads'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.ui'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,javax.swing.event,javax.swing.filechooser,javax.swing.table,javax.swing.text,org.jfree.date,org.jfree.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.ui.about'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,javax.swing.border,javax.swing.table,org.jfree.base,org.jfree.ui'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.ui.about.resources'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.ui.action'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.ui.tabbedui'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jfree.util'/>
+      <attribute name='version' type='Version' value='1.0.12'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='javax.swing,org.jfree.base.config,org.jfree.ui'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.keypoint'/>
+      <attribute name='version' type='Version' value='0.3.4'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+      <directive name='uses' value='org.apache.commons.lang.exception'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.builder'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.enum'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.enums'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.exception'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.math'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.mutable'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.reflect'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.text'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.commons.lang.time'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='indesit.device.protocol.lib'/>
+      <attribute name='bundle-version' type='Version' value='0.3.4'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.accessibility)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.imageio)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.imageio.metadata)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.imageio.stream)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.border)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.event)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.filechooser)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.plaf)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.table)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.text)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+    </requirement>
+    <requirement namespace='osgi.native'>
+      <directive name='filter' value='(|(&amp;(osgi.native.osname~=Linux)(|(osgi.native.processor~=x86)(osgi.native.processor~=amd64)(osgi.native.processor~=x86_64)))(&amp;(osgi.native.osname~=Linux)(osgi.native.processor~=arm))(&amp;(|(osgi.native.osname~=WindowsXP)(osgi.native.osname~=Windows XP)(osgi.native.osname~=WinXP)(osgi.native.osname~=WindowsVista)(osgi.native.osname~=Windows Vista)(osgi.native.osname~=Windows2003)(osgi.native.osname~=Windows 7)(osgi.native.osname~=Win32))(osgi.native.processor~=x86))(&amp;(|(osgi.native.osname~=WindowsXP)(osgi.native.osname~=Windows XP)(osgi.native.osname~=WinXP)(osgi.native.osname~=WindowsVista)(osgi.native.osname~=Windows Vista)(osgi.native.osname~=Windows2003)(osgi.native.osname~=Windows 7)(osgi.native.osname~=Win32))(|(osgi.native.processor~=amd64)(osgi.native.processor~=x86_64))))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+</repository>

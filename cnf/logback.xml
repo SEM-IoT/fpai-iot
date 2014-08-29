@@ -1,0 +1,17 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %-36.36logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.flexiblepower.runtime.ui" level="ERROR" />
+    <logger name="org.flexiblepower" level="DEBUG" />
+    <logger name="net.powermatcher" level="ERROR" />
+    <logger name="org.tno.iotlab" level="DEBUG" />
+    <logger name="org.tno.serial" level="WARN" />
+    <logger name="org.tno.nl.iotlab" level="WARN" />
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
+

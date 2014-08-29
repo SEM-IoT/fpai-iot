@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="vios" default="none">
+	<import file="../cnf.shared/build.xml" />
+</project>

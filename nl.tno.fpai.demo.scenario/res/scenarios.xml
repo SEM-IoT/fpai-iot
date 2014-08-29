@@ -1,0 +1,17 @@
+<scenarios>
+	<scenario name="1. Clear">
+	</scenario>
+	
+	<scenario name="2. Start IoT lab">
+		<config bundleId="iotlab.protocol.driver" factoryId="org.tno.nl.iotlab.protocol.IoTProtocolDriver">
+			<addresses>01,02,03</addresses>
+			<pids>org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl, org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl,org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl</pids>
+		</config>
+		
+		<config bundleId="iotlab.serial.driver2" factoryId="org.tno.serial.driver.SerialDriverImpl">
+			<getcomport>/dev/tty.SLAB_USBtoUART</getcomport>
+		</config>
+		
+	</scenario>
+	
+</scenarios>

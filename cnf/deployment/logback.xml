@@ -1,0 +1,35 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %-5level %-36.36logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>fpai.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>fpai.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %-5level %-36.36logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+		<connectionSource class="nl.tno.fpai.logging.osgidatasource.OSGiConnectionSource">
+			<!-- <filter>(url=jdbc:mysql://fpaimonitoring.sensorlab.tno.nl:3306/vios_bronsbergen)</filter> -->
+		</connectionSource>
+	</appender>
+
+	<appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="DB" />
+		<appender-ref ref="FILE" />
+	</appender>
+
+	<root level="WARN">
+		<appender-ref ref="ASYNC" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

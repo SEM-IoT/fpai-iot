@@ -1,0 +1,14 @@
+# Generate Java / Eclipse generated stuff
+*.swp
+cnf/db
+cnf/cache
+cnf/release
+bin
+bin_test
+generated
+*playground
+cobertura.ser
+instrumented
+coverage.xml
+RemoteSystemsTempFiles
+.metadata/

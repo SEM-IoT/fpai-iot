@@ -1,0 +1,22 @@
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	junit.osgi,\
+	org.eclipse.osgi,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	slf4j.api,\
+	iotlab.common.virtual.object;version=latest
+	osgi.core,\
+	slf4j.api,\
+	iotlab.common.virtual.object;version=latest
+
+
+Bundle-Version: 1.0.2
+Export-Package: org.tno.nl.iotlab.protocol,\
+	org.flexiblepower.inrg.vo
+Import-Package: aQute*,\
+	org.flexiblepower*,\
+	*;resolution:=optional
+Private-Package: org.tno.nl.iotlab.protocol.driver
+Service-Component: org.tno.nl.iotlab.*

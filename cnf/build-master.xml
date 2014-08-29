@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="vios" default="build">
+	<property name="project.title" value="VIOS" />
+	<property name="targetversion" value="1.0" />
+	<import file="../cnf.shared/build-jenkins.xml" />
+	
+	<target name="deployment-extras">
+		<copy todir="${felix}/fpai_bundles" flatten="true">
+			<fileset dir="${workspacedir}/cnf/localrep">
+				<include name="**/*.jar"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="snapshot" depends="fpai.template.snapshot">
+		<antcall target="workspace" />
+	</target>
+</project>

@@ -1,0 +1,9 @@
+-buildpath: slf4j.api,\
+	biz.aQute.bnd.annotation,\
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	osgi.core,\
+	osgi.cmpn
+
+
+-sub: *.bnd

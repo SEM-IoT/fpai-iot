@@ -1,0 +1,18 @@
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	junit.osgi,\
+	org.eclipse.osgi,\
+	osgi.cmpn,\
+	osgi.core,\
+	slf4j.api,\
+	iotlab.common.virtual.object;version=latest,\
+	iotlab.protocol.driver;version=latest,\
+	biz.aQute.bnd.annotation,\
+	iotlab.mqtt;version=latest
+
+Bundle-Version: 1.0.0
+Private-Package: org.tno.iotlab.moist.vo
+Service-Component: org.tno.iotlab.moist.vo.*
+Export-Package: org.tno.iotlab.moist.vo
+Include-Resource: res/
