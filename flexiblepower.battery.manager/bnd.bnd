@@ -1,4 +1,8 @@
--buildpath: ${default-buildpath}
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	biz.aQute.bnd.annotation,\
+	slf4j.api
 
 Bundle-Version: 1.0.0.${qualifier}
 Private-Package: org.flexiblepower.battery.manager

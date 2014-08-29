@@ -1,6 +1,4 @@
 -buildpath: \
-	junit.osgi,\
-	org.eclipse.osgi,\
 	osgi.cmpn,\
 	osgi.core,\
 	slf4j.api,\

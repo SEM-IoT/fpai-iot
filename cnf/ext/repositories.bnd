@@ -12,8 +12,7 @@ plugindir: ${workspace}/cnf/bnd
 	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-Extras (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-Extras (14.02 Snapshot)';pretty=true,\
 	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-Monitoring (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-Monitoring (14.02 Snapshot)';pretty=true,\
 	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-PowerMatcher (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-PowerMatcher (14.02 Snapshot)';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='PowerMatcher (0.9)';local='${workspace}/cnf/repos/PowerMatcher (0.9)';pretty=true,\
-#	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Local Hub;    local=${workspace}/../../ext-repo,\
+	aQute.bnd.deployer.repository.LocalIndexedRepo;name='PowerMatcher (0.9)';local='${workspace}/cnf/repos/PowerMatcher (0.9)';pretty=true
 
 -releaserepo: Release
 
