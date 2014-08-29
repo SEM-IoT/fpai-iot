@@ -13,3 +13,4 @@ coverage.xml
 RemoteSystemsTempFiles
 .metadata/
 .recommenders/
+cnf/felix
