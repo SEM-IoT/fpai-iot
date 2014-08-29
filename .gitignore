@@ -12,3 +12,4 @@ instrumented
 coverage.xml
 RemoteSystemsTempFiles
 .metadata/
+.recommenders/

@@ -1,5 +1,7 @@
 package org.tno.iotlab.temperatuur.vo;
 
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ScheduledExecutorService;
@@ -80,9 +82,9 @@ public class SimTemperatuurVOImpl extends AbstractObservationProvider<TempVoStat
             widgetRegistration = bundleContext.registerService(Widget.class, widget, null);
 
             observationProviderRegistration = new ObservationProviderRegistrationHelper(this).observationType(TempVoState.class)
-                                                                                             .observationOf(address)
-                                                                                             .observedBy(address)
-                                                                                             .register();
+                    .observationOf(address)
+                    .observedBy(address)
+                    .register();
             scheduledFuture = schedulerService.scheduleAtFixedRate(this, 0, 10, java.util.concurrent.TimeUnit.SECONDS);
 
         } catch (Throwable e) {
@@ -147,9 +149,16 @@ public class SimTemperatuurVOImpl extends AbstractObservationProvider<TempVoStat
 
     @Override
     public void sendNewData(String temperature) {
-        logger.debug("SimTemperature = " + temperature);
-        latestState = new TempVoState(Double.parseDouble(temperature), address);
-        publish(new Observation<TempVoState>(timeService.getTime(), getState()));
+        NumberFormat nf = NumberFormat.getInstance();
+        try {
+            Double temp = nf.parse(temperature).doubleValue();
+            logger.debug("SimTemperature = " + temp);
+            latestState = new TempVoState(temp, address);
+            publish(new Observation<TempVoState>(timeService.getTime(), getState()));
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            logger.error("Error converting input data", e);
+        }
 
         // If mqtt service is connected
         // mqttService.publishMqtt(temperature, "test/temperature");
