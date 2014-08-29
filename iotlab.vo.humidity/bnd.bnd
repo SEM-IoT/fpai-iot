@@ -7,11 +7,11 @@
 	iotlab.common.virtual.object;version=latest,\
 	iotlab.protocol.driver;version=latest,\
 	org.eclipse.paho.client.mqttv3,\
-	iotlab.mqtt,\
+	iotlab.mqtt;version=latest,\
 	biz.aQute.bnd.annotation
 
 Bundle-Version: 1.0.0
 Private-Package: org.tno.iotlab.temperatuur.vo
 Service-Component: org.tno.iotlab.temperatuur.vo.*
 Export-Package: org.tno.iotlab.temperatuur.vo
-Include-Resource: res/
+Include-Resource: res/ 

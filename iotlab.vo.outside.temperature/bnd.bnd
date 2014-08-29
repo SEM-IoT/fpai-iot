@@ -7,7 +7,7 @@
 	de.twentyeleven.skysail.org.json-osgi,\
 	flexiblepower.api,\
 	flexiblepower.api.ext,\
-	iotlab.mqtt
+	iotlab.mqtt;version=latest
 
 Bundle-Version: 1.0.0
 Private-Package: org.tno.iotlab.outside.temperatuur.vo
