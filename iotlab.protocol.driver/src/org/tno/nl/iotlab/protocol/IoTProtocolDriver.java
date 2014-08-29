@@ -34,9 +34,9 @@ public class IoTProtocolDriver implements IoTProtocol, Runnable {
         List<String> addresses();
 
         @Meta.AD(deflt = "org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.light.vo.LightVOImpl, " + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl,,"
-                         + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl")
-                List<String>
-                pids();
+                + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl")
+        List<String>
+        pids();
     }
 
     @Activate
@@ -44,12 +44,13 @@ public class IoTProtocolDriver implements IoTProtocol, Runnable {
 
         Config config = Configurable.createConfigurable(Config.class, properties);
 
-        if (configurationAdmin != null) {
-            dataDecoder = new DataDecoder(configurationAdmin, config.addresses(), config.pids(), this);
-        }
         try {
+            if (configurationAdmin != null) {
+                dataDecoder = new DataDecoder(configurationAdmin, config.addresses(), config.pids(), this);
+            }
             scheduledFuture = schedulerService.scheduleAtFixedRate(this, 0, 30, java.util.concurrent.TimeUnit.SECONDS);
         } catch (Throwable e) {
+            logger.error(e.getMessage(), e);
         }
     }
 

@@ -1,5 +1,2 @@
--include: cnf/build.bnd
-	
 Bundle-Category: VIOS
 qualifier: SNAPSHOT-${tstamp}
-

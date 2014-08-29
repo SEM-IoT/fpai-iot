@@ -18,11 +18,6 @@ win32/rxtxSerial.dll; osname=WindowsXP ; osname=Windows XP ; osname=WinXP ; osna
 win64/rxtxSerial.dll; osname=WindowsXP ; osname=Windows XP ; osname=WinXP ; osname=WindowsVista ; osname=Windows Vista ; osname=Windows2003 ; osname=Windows 7 ; osname=Win32 ; processor=amd64 ; processor=x86_64,\
 macos/librxtxSerial.jnilib; osname=Mac OS X,*
 
-Import-Package: \
-	org.flexiblepower*,\
-	*;resolution:=optional
-
-
 Service-Component: *
 Private-Package: gnu.io
 	
