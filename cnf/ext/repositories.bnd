@@ -5,14 +5,15 @@ plugindir: ${workspace}/cnf/bnd
 	${plugindir}/biz.aQute.bndlib-2.2.0.jar
 
 -plugin:\
-	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Release;      local=${workspace}/cnf/release;pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Local;        local=${workspace}/cnf/localrep;pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='Dependencies';local='${workspace}/cnf/repos/Dependencies';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI (14.02 Snapshot)';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-Extras (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-Extras (14.02 Snapshot)';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-Monitoring (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-Monitoring (14.02 Snapshot)';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='FPAI-PowerMatcher (14.02 Snapshot)';local='${workspace}/cnf/repos/FPAI-PowerMatcher (14.02 Snapshot)';pretty=true,\
-	aQute.bnd.deployer.repository.LocalIndexedRepo;name='PowerMatcher (0.9)';local='${workspace}/cnf/repos/PowerMatcher (0.9)';pretty=true
+	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Release;\
+	      local=${workspace}/cnf/release;\
+	      pretty=true,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo; name=Dependencies;\
+		locations=https://github.com/flexiblepower/bundle-hub/raw/master/index.xml.gz;\
+		cache=${workspace}/cnf/cache,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo; name=FPAI Core (SNAPSHOT);\
+		locations=http://fpai-ci.sensorlab.tno.nl/builds/fpai-core/snapshots/development/14.10-LATEST-SNAPSHOT/repo/index.xml;\
+		cache=${workspace}/cnf/cache
 
 -releaserepo: Release
 
