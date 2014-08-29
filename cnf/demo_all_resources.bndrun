@@ -37,7 +37,8 @@
 	osgi.identity;filter:='(osgi.identity=iotlab.vo.moist)',\
 	osgi.identity;filter:='(osgi.identity=iotlab.vo.light)',\
 	osgi.identity;filter:='(osgi.identity=iotlab.serial.driver2)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.simulation.vo.temperature)'
+	osgi.identity;filter:='(osgi.identity=iotlab.simulation.vo.temperature)',\
+	osgi.identity;filter:='(osgi.identity=iotlab.simulation.vo.temperatureplot)'
 -runbundles:  \
 	biz.aQute.bnd.annotation;version='[1.52.3,1.52.4)',\
 	ch.qos.logback.classic;version='[1.0.13,1.0.14)',\
@@ -57,6 +58,7 @@
 	iotlab.serial.driver2;version=latest,\
 	iotlab.service.warmte.trui;version=latest,\
 	iotlab.simulation.vo.temperature;version=latest,\
+	iotlab.simulation.vo.temperatureplot;version=latest,\
 	iotlab.vo.humidity;version=latest,\
 	iotlab.vo.light;version=latest,\
 	iotlab.vo.moist;version=latest,\
