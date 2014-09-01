@@ -1,18 +1,12 @@
-package nl.tno.iotlab.edwino.driver;
+package nl.tno.iotlab.eduino.protocol;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import javax.measure.Measurable;
-import javax.measure.Measure;
-import javax.measure.quantity.Dimensionless;
-import javax.measure.quantity.Temperature;
-import javax.measure.unit.NonSI;
-import javax.measure.unit.SI;
-
-import nl.tno.iotlab.edwino.driver.SerialProtocolParser.Config;
+import nl.tno.iotlab.eduino.driver.EduinoDriver;
+import nl.tno.iotlab.eduino.protocol.EduinoProtocolParser.Config;
 import nl.tno.iotlab.serial.driver.SerialProtocolDriver;
 
 import org.flexiblepower.time.TimeService;
@@ -27,8 +21,8 @@ import aQute.bnd.annotation.component.Reference;
 import aQute.bnd.annotation.metatype.Meta;
 
 @Component(designateFactory = Config.class, immediate = true)
-public class SerialProtocolParser {
-    private static final Logger log = LoggerFactory.getLogger(SerialProtocolParser.class);
+public class EduinoProtocolParser {
+    private static final Logger log = LoggerFactory.getLogger(EduinoProtocolParser.class);
 
     @Meta.OCD(description = "Protocol parser for the Edwino gateway through a serial connection")
     public static interface Config {
@@ -38,7 +32,7 @@ public class SerialProtocolParser {
 
     private final AtomicBoolean running;
 
-    public SerialProtocolParser() {
+    public EduinoProtocolParser() {
         running = new AtomicBoolean();
     }
 
@@ -56,10 +50,10 @@ public class SerialProtocolParser {
         this.timeService = timeService;
     }
 
-    private final Map<String, EdwinoDriver> drivers = new HashMap<String, EdwinoDriver>();
+    private final Map<String, EduinoDriver> drivers = new HashMap<String, EduinoDriver>();
 
     @Reference(optional = true, dynamic = true, multiple = true)
-    public void addEdwinoDriver(EdwinoDriver driver, Map<String, Object> properties) {
+    public void addEdwinoDriver(EduinoDriver driver, Map<String, Object> properties) {
         final String key = parse(properties);
         if (drivers.containsKey(key)) {
             log.warn("Found 2 drivers on the same address: {}", key);
@@ -67,7 +61,7 @@ public class SerialProtocolParser {
         drivers.put(key, driver);
     }
 
-    public void removeEdwinoDriver(EdwinoDriver driver, Map<String, Object> properties) {
+    public void removeEdwinoDriver(EduinoDriver driver, Map<String, Object> properties) {
         final String key = parse(properties);
         if (drivers.get(key) == driver) {
             drivers.remove(key);
@@ -90,23 +84,29 @@ public class SerialProtocolParser {
                         if (line != null) {
                             final Date now = timeService.getTime();
 
-                            // TODO: do some parsing, for now some dummy data
-                            final String address = "01"; // TODO
-                            final Measurable<Temperature> temp1 = Measure.valueOf(20.4, SI.CELSIUS);
-                            final Measurable<Temperature> temp2 = Measure.valueOf(9.8, SI.CELSIUS);
-                            final Measurable<Dimensionless> humidity = Measure.valueOf(62, NonSI.PERCENT);
-                            final Measurable<Dimensionless> light = Measure.valueOf(2, NonSI.PERCENT);
+                            // 64368: APP Receiving type-S 24.6C 0L 0PIR 0.00V 0lost from 02...
+                            final String[] parts = line.split(" ");
+                            if (parts.length == 11 && parts[3].equals("type-S")) {
+                                // For now we just support the S type
+                                final String address = parts[11].substring(0, 2);
 
-                            final EdwinoDriver edwinoDriver = drivers.get(address);
-                            if (edwinoDriver != null) {
-                                edwinoDriver.update(now, temp1, temp2, humidity, light);
+                                final EduinoDriver driver = getDriver(address);
+                                if (driver != null) {
+                                    driver.update(now, parts);
+                                }
                             }
                         }
                     } catch (final InterruptedException e) {
                     }
                 }
             }
+
         }.start();
+    }
+
+    EduinoDriver getDriver(String address) {
+        // TODO: auto-create a new driver for new addresses?
+        return drivers.get(address);
     }
 
     @Deactivate
