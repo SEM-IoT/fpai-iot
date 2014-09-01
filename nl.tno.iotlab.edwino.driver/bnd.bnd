@@ -1,0 +1,11 @@
+-buildpath:  \
+	flexiblepower.api,\
+	flexiblepower.api.ext,\
+	osgi.core,\
+	biz.aQute.bnd.annotation,\
+	slf4j.api,\
+	nl.tno.iotlab.serial.driver;version=latest
+
+Bundle-Version: 1.0.0.${qualifier}
+Private-Package: nl.tno.iotlab.edwino.driver
+Service-Component:  *
