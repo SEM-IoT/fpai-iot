@@ -6,10 +6,10 @@
 Bundle-Version: 1.0.0
 Include-Resource: res
 
-Private-Package: nl.tno.iotlab.serial.driver.impl
 Export-Package: \
 	gnu.io.*;version=2.2.pre2,\
 	nl.tno.iotlab.serial.driver;version=1.0.0.${qualifier}
+Private-Package: nl.tno.iotlab.serial.driver.*
 
 #technolution/librxtxSerial.so; osname=Linux; processor=arm,\
 
