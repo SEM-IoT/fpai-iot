@@ -1,0 +1,5 @@
+-buildpath:  nl.tno.iotlab.eduino, biz.aQute.bnd.annotation, slf4j.api
+Bundle-Version: 1.0.0.${qualifier}
+Export-Package: nl.tno.iotlab.eduino.R434
+Private-Package: nl.tno.iotlab.eduino.R434.impl
+Service-Component: *
