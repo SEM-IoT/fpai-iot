@@ -59,10 +59,13 @@ public class SimulatedSerialPort implements SerialProtocolDriver {
                             String line;
                             line = reader.readLine();
                             if (line != null) {
-                                final long millis = Long.parseLong(line.substring(0, line.indexOf(':')));
-                                final long diff = millis - lastTime;
-                                if (diff > 10) {
-                                    wait(diff / 10);
+                                try {
+                                    final long millis = Long.parseLong(line.substring(0, line.indexOf(':')));
+                                    final long diff = millis - lastTime;
+                                    if (diff > 10) {
+                                        wait(diff / 10);
+                                    }
+                                } catch (final NumberFormatException ex) {
                                 }
                                 messages.put(line);
                             } else {

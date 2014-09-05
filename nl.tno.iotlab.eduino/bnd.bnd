@@ -7,5 +7,6 @@
 	nl.tno.iotlab.serial.driver;version=latest
 
 Bundle-Version: 1.0.0.${qualifier}
-Private-Package: nl.tno.iotlab.eduino.*
+Private-Package: nl.tno.iotlab.eduino.protocol
+Export-Package: nl.tno.iotlab.eduino.api
 Service-Component:  *
