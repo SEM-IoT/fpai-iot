@@ -47,6 +47,11 @@ public class RF24ProtocolHandler implements EduinoProtocolHandler {
             final String address = tokenizer.nextToken();
             final RF24Driver driver = drivers.get(address);
 
+            // TODO: should we do anything with these??
+            final String packetId = tokenizer.nextToken();
+            final String sensorType = tokenizer.nextToken();
+            final String nrBytes = tokenizer.nextToken();
+
             if (driver != null) {
                 final ByteBuffer buffer = ByteBuffer.allocate(tokenizer.countTokens());
                 while (tokenizer.hasMoreElements()) {

@@ -1,4 +1,4 @@
--buildpath:  nl.tno.iotlab.eduino, biz.aQute.bnd.annotation, slf4j.api
+-buildpath:  nl.tno.iotlab.eduino, biz.aQute.bnd.annotation, slf4j.api, flexiblepower.api, flexiblepower.api.ext, osgi.core
 Bundle-Version: 1.0.0.${qualifier}
 Export-Package: nl.tno.iotlab.eduino.RF24
 Private-Package: nl.tno.iotlab.eduino.RF24.impl
