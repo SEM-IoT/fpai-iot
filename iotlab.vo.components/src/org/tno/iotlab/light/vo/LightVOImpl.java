@@ -16,7 +16,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tno.iotlab.common.vo.VO;
 import org.tno.iotlab.common.vo.VOControlParameters;
-import org.tno.iotlab.light.vo.LightVOImpl.Config;
 import org.tno.iotlab.light.vo.LightVOImpl.LightVoState;
 import org.tno.mqtt.connection.MqttConnection;
 import org.tno.nl.iotlab.protocol.IoTProtocolDriver;
@@ -28,7 +27,7 @@ import aQute.bnd.annotation.component.Reference;
 import aQute.bnd.annotation.metatype.Configurable;
 import aQute.bnd.annotation.metatype.Meta;
 
-@Component(designateFactory = Config.class, provide = VO.class, immediate = true)
+@Component(designateFactory = LightVOImpl.Config.class, provide = VO.class, immediate = true)
 public class LightVOImpl extends AbstractObservationProvider<LightVoState> implements VO {
 
     private final static Logger logger = LoggerFactory.getLogger(LightVOImpl.class);

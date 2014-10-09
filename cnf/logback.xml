@@ -8,10 +8,10 @@
     <logger name="org.flexiblepower" level="DEBUG" />
     <logger name="net.powermatcher" level="ERROR" />
     <logger name="org.tno.iotlab" level="DEBUG" />
-    <logger name="org.tno.serial" level="WARN" />
-    <logger name="org.tno.nl.iotlab" level="WARN" />
+    
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />
     </root>
+
 </configuration>
 

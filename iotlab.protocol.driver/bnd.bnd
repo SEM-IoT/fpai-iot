@@ -14,5 +14,6 @@ Bundle-Version: 1.0.0
 
 Service-Component: *
 Private-Package:  \
-	org.tno.nl.iotlab.protocol,\
 	org.tno.serial.driver
+Export-Package:  \
+	org.tno.nl.iotlab.protocol

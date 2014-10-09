@@ -14,6 +14,7 @@ import org.flexiblepower.protocol.rxtx.SerialConnectionOptions.Databits;
 import org.flexiblepower.protocol.rxtx.SerialConnectionOptions.Parity;
 import org.flexiblepower.protocol.rxtx.SerialConnectionOptions.Stopbits;
 import org.osgi.framework.BundleContext;
+import org.osgi.service.cm.ConfigurationAdmin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tno.nl.iotlab.protocol.IoTProtocolDriver;
@@ -23,19 +24,18 @@ import aQute.bnd.annotation.component.Activate;
 import aQute.bnd.annotation.component.Component;
 import aQute.bnd.annotation.component.Deactivate;
 import aQute.bnd.annotation.component.Reference;
+import aQute.bnd.annotation.metatype.Configurable;
 import aQute.bnd.annotation.metatype.Meta;
 
 @Component(designateFactory = Config.class, immediate = true)
 public class SerialDriverImpl {
 
-    private final static Logger logger = LoggerFactory.getLogger(SerialDriverImpl.class);
+    private final static Logger log = LoggerFactory.getLogger(SerialDriverImpl.class);
 
     Thread serialThread;
 
     @Meta.OCD
     interface Config {
-        // @Meta.AD(deflt = "comport driver")
-        // String resourceId();
 
         @Meta.AD(deflt = "/dev/tty.SLAB_USBtoUART")
         String port_name();
@@ -44,9 +44,9 @@ public class SerialDriverImpl {
         List<String> addresses();
 
         @Meta.AD(deflt = "org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.light.vo.LightVOImpl, " + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl,,"
-                + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl")
-        List<String>
-        pids();
+                         + "       org.tno.iotlab.temperatuur.vo.TemperatuurVOImpl-org.tno.iotlab.temperatuur.vo.HumidityVOImpl-org.tno.iotlab.moist.vo.MoistVOImpl")
+                List<String>
+                pids();
 
     }
 
@@ -65,14 +65,19 @@ public class SerialDriverImpl {
     @Activate
     public void activate(BundleContext bundleContext, Map<String, Object> properties) throws IOException {
 
-        voLifeCycleManger = new IoTProtocolDriver();
+        try {
+            Config config = Configurable.createConfigurable(Config.class, properties);
+            voLifeCycleManger = new IoTProtocolDriver(config.addresses(), config.pids(), configurationAdmin);
 
-        connection = connectionFactory.openSerialConnection(config.port_name(),
-                                                            new SerialConnectionOptions(Baudrate.B9600,
-                                                                                        Databits.D7,
-                                                                                        Stopbits.S1,
-                                                                                        Parity.Even));
-        running = true;
+            connection = connectionFactory.openSerialConnection(config.port_name(),
+                                                                new SerialConnectionOptions(Baudrate.B57600,
+                                                                                            Databits.D8,
+                                                                                            Stopbits.S1,
+                                                                                            Parity.None));
+            running = true;
+        } catch (Exception e) {
+            System.err.println("afdsfad");
+        }
 
         new Thread("IoT Protocol Driver") {
             @Override
@@ -92,12 +97,19 @@ public class SerialDriverImpl {
                         }
                     }
                 } catch (IOException ex) {
-                    logger.error("I/O error while reading from smart meter", ex);
+                    log.error("I/O error while reading from smart meter", ex);
                 } finally {
                     connection.close();
                 }
             }
         }.start();
+    }
+
+    ConfigurationAdmin configurationAdmin;
+
+    @Reference
+    public void setConfigurationAdmin(ConfigurationAdmin configurationAdmin) {
+        this.configurationAdmin = configurationAdmin;
     }
 
     @Deactivate
@@ -106,7 +118,7 @@ public class SerialDriverImpl {
     }
 
     public void receivedData(String data) {
-        logger.debug("Driver Impl ontvangt: " + data);
+        log.debug("Driver Impl ontvangt: " + data);
         voLifeCycleManger.newDataReceived(data);
     }
 

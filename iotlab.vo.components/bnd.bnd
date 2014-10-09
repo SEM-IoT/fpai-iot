@@ -7,10 +7,10 @@
 	osgi.core,\
 	slf4j.api,\
 	iotlab.common.virtual.object;version=latest,\
-	iotlab.protocol.driver;version=latest,\
 	biz.aQute.bnd.annotation,\
 	iotlab.mqtt;version=latest,\
-	de.twentyeleven.skysail.org.json-osgi
+	de.twentyeleven.skysail.org.json-osgi,\
+	iotlab.protocol.driver;version=latest
 
 Bundle-Version: 1.0.0
 Service-Component: org.tno.iotlab.temperatuur.vo.*

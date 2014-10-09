@@ -18,8 +18,6 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.webconsole.plugins.ds)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.http.api)',\
 	osgi.identity;filter:='(osgi.identity=osgi.cmpn)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.temperature)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.protocol.driver)',\
 	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.monitoring.db.pooleddatasource)',\
 	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.monitoring.dummy.provider)',\
 	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.monitoring.file)',\
@@ -27,18 +25,11 @@
 	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.monitoring.ui.web.service)',\
 	osgi.identity;filter:='(osgi.identity=com.mysql.jdbc)',\
 	osgi.identity;filter:='(osgi.identity=org.ops4j.pax.jdbc.mysql)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.outside.temperature)',\
 	osgi.identity;filter:='(osgi.identity=iotlab.service.warmte.trui)',\
 	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.monitoring.db.writer)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.mqtt)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.humidity)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.temperature)',\
-	osgi.identity;filter:='(osgi.identity=nl.tno.fpai.demo.scenario)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.moist)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.vo.light)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.serial.driver2)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.simulation.vo.temperature)',\
-	osgi.identity;filter:='(osgi.identity=iotlab.simulation.vo.temperatureplot)'
+	osgi.identity;filter:='(osgi.identity=flexiblepower.protocol.rxtx)',\
+	osgi.identity;filter:='(osgi.identity=iotlab.protocol.driver)',\
+	osgi.identity;filter:='(osgi.identity=iotlab.vo.components)'
 -runbundles:  \
 	biz.aQute.bnd.annotation;version='[1.52.3,1.52.4)',\
 	ch.qos.logback.classic;version='[1.0.13,1.0.14)',\
@@ -48,6 +39,7 @@
 	de.twentyeleven.skysail.org.json-osgi;version='[20080701.0.0,20080701.0.1)',\
 	flexiblepower.api;version='[1.1.0,1.1.1)',\
 	flexiblepower.api.ext;version='[1.1.0,1.1.1)',\
+	flexiblepower.protocol.rxtx;version=latest,\
 	flexiblepower.runtime;version='[1.0.1,1.0.2)',\
 	flexiblepower.ui;version='[1.0.0,1.0.1)',\
 	flexiblepower.ui.resourceinfo;version='[1.0.0,1.0.1)',\
@@ -55,16 +47,8 @@
 	iotlab.common.virtual.object;version=latest,\
 	iotlab.mqtt;version=latest,\
 	iotlab.protocol.driver;version=latest,\
-	iotlab.serial.driver2;version=latest,\
 	iotlab.service.warmte.trui;version=latest,\
-	iotlab.simulation.vo.temperature;version=latest,\
-	iotlab.simulation.vo.temperatureplot;version=latest,\
-	iotlab.vo.humidity;version=latest,\
-	iotlab.vo.light;version=latest,\
-	iotlab.vo.moist;version=latest,\
-	iotlab.vo.outside.temperature;version=latest,\
-	iotlab.vo.temperature;version=latest,\
-	nl.tno.fpai.demo.scenario;version=latest,\
+	iotlab.vo.components;version=latest,\
 	nl.tno.fpai.monitoring.db.pooleddatasource;version='[0.1.0,0.1.1)',\
 	nl.tno.fpai.monitoring.db.writer;version=latest,\
 	nl.tno.fpai.monitoring.dummy.provider;version='[0.0.0,0.0.1)',\

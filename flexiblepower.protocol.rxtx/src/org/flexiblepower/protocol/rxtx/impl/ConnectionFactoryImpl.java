@@ -50,7 +50,7 @@ public class ConnectionFactoryImpl implements ConnectionFactory {
                     log.error(msg, e);
                     throw new IOException(msg, e);
                 }
-
+                log.debug("Serial Port Connection Created: " + serialPort.toString());
                 return new SerialConnection(serialPort);
             }
         }
