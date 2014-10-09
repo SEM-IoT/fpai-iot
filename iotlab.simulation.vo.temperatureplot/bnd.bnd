@@ -7,7 +7,6 @@
 	osgi.core,\
 	slf4j.api,\
 	iotlab.common.virtual.object;version=latest,\
-	iotlab.protocol.driver;version=latest,\
 	biz.aQute.bnd.annotation,\
 	iotlab.mqtt;version=latest
 
